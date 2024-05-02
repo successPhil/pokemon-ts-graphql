@@ -1,0 +1,59 @@
+.progress-bar-container {
+    height: 1.4rem;
+    width: 420px;
+    background-color: #D0E3C4;
+    border-radius: 3px;
+    margin-top: .8em;
+    
+}
+
+.progress-bar {
+    width: 100%;
+    border-radius: 3px;
+   
+}
+
+.progress-bar-value {
+    color: #3B1F2B;
+    font: 1em "Pokemon GB";
+    padding-left:9em;
+    line-height: 1.5;
+    
+    
+
+}
+
+.player-poke, .enemy-poke {
+    height: 200px;
+}
+
+.player-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    align-self: center;
+  
+    
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+;
+}
+.enemy-container {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.player-display {
+    display: flex;
+}
+
+.enemy-player {
+    display: flex;
+    flex-direction: column;
+    
+}

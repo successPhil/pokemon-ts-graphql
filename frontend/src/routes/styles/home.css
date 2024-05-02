@@ -1,0 +1,54 @@
+.home-container {
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #8963BA;
+    width: 630px;
+    margin: auto;
+}
+
+@media (max-width: 768px){
+    .intro-container{
+        width: 460px;
+
+    }
+    .bot-image-container{
+        height: 250px;
+    }
+    .top-image-container{
+        height: 250px;
+    }
+}
+
+.top-image-container {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 300px;
+    
+}
+
+.bot-image-container {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    
+}
+
+li {
+    list-style: none;
+}
+
+.gen-1-list {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4em 0;
+    font: 1.4rem "Pokemon GB";
+    color: #D7EBBA;
+    
+}
+

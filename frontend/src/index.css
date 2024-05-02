@@ -1,0 +1,98 @@
+html, body {
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+    background-color: #4C4B63;
+    min-height: screen;
+  }
+
+  @font-face {
+    font-family: 'Pokemon GB';
+    src: url('./fonts/pokemon.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Essentiarum';
+    src: url('./fonts/Essentiarum Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.grass {
+  color: #4caf50; /* Green */
+}
+
+.fire {
+  color: #ff5722; /* Red */
+}
+
+.water {
+  color: #009FFD; /* Blue */
+}
+
+.electric {
+  color: #ffeb3b; /* Yellow */
+}
+
+.psychic {
+  color: #7D5BA6; /* Pink */
+}
+
+.dark {
+  color: #424242; /* Dark Gray */
+}
+.fighting {
+  color: #ff5722; /* Deep Orange */
+}
+.steel {
+  color: #465362; /* Steel Gray */
+}
+
+.dragon {
+  color: #F2AF29 /* Purple */
+}
+
+.fairy {
+  color: #ff4081; /* Light Pink */
+}
+
+.normal {
+  color: #D1C8E1 /* Light Gray */
+}
+
+.flying {
+  color: #03a9f4; /* Sky Blue */
+}
+
+.poison {
+  color: #DDD92A; /* Dark Purple */
+}
+
+.ground {
+  color: #795548; /* Brown */
+}
+
+.rock {
+  color: #716A5C; /* Light Green */
+}
+
+.bug {
+  color: #4caf50; /* Green */
+}
+
+.ghost {
+  color: #607d8b; /* Steel Gray */
+}
+
+.ice {
+  color: #54C6EB; /* Sky Blue */
+}
+
+
+
+
+
+

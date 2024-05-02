@@ -1,0 +1,52 @@
+
+.player-menu-container {
+    width: 400px;
+    height: 12em;
+    margin-left: 4em;
+    margin-top: 2.3em;
+   
+    
+    border: 4px solid white;
+    box-shadow: 0 14px black,
+               
+                0 -6px black,
+                14px 0px black,
+                -6px 0px black;
+}
+
+.player-menu-box {
+    position: relative;
+    background-color: #cacfcd;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border: 4px solid black;
+    box-shadow: 4px 0px white,
+                -4px 0px white,
+                0px 4px white,
+                0px -4px white;
+    /* box-shadow: inset 0 -8px black; */
+}
+
+
+.top-left-menu {
+    position: relative;
+    right: 7%;
+    bottom: 11%;
+}
+.top-right-menu {
+    position: relative;
+    left: 99%;
+    bottom: 23%;
+}
+.bottom-left-menu {
+    position: relative;
+    right: 6.7%;
+    top: 75%;
+}
+.bottom-right-menu {
+    position: relative;
+    left: 99.5%;
+    top: 63%;
+}

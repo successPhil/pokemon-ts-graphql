@@ -1,0 +1,78 @@
+@keyframes playerMoveMultiOne {
+    0% {
+        bottom: 40%;
+        left: 40%;
+        transform: rotate(0deg)
+    }
+    100% {
+        bottom: 80%;
+        left: 55%;
+        transform: rotate(3600deg)
+    }
+}
+.multi-move-type-1, .multi-move-type-2, .multi-move-type-3, .multi-move-type-4 {
+    height: 60px;
+
+}
+
+.multi-move-type-1 {
+    position: absolute;
+    animation: playerMoveMultiOne 1.2s forwards;
+}
+@keyframes playerMoveMultiTwo {
+    5% {
+        bottom: 40%;
+        left: 35%;
+        transform: rotate(0deg)
+    }
+    100% {
+        bottom: 80%;
+        left: 50%;
+        transform: rotate(3600deg)
+    }
+}
+
+
+.multi-move-type-2 {
+    position: absolute;
+    animation: playerMoveMultiTwo 1.2s forwards;
+}
+
+
+@keyframes playerMoveMultiThree {
+    10% {
+        bottom: 40%;
+        left: 45%;
+        transform: rotate(0deg)
+    }
+    100% {
+        bottom: 80%;
+        left: 60%;
+        transform: rotate(3600deg)
+    }
+}
+
+
+.multi-move-type-3 {
+    position: absolute;
+    animation: playerMoveMultiThree 1.2s forwards;
+}
+
+@keyframes playerMoveMultiFour {
+    15% {
+        bottom: 40%;
+        left: 25%;
+        transform: rotate(0deg)
+    }
+    100% {
+        bottom: 80%;
+        left: 45%;
+        transform: rotate(3600deg)
+    }
+}
+
+
+.multi-move-type-4 {
+    position: absolute;
+    animation: playerMoveMultiFour 1.2s forwards;
+}

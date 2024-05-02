@@ -1,0 +1,26 @@
+version: "3"
+services:
+  api:
+    build: ./backend
+    ports:
+      - "4000:4000"
+    environment:
+      - DB_NAME=$POSTGRES_DB
+      - DB_USER=$POSTGRES_USER
+      - DB_PASS=$POSTGRES_PASSWORD
+    depends_on:
+      - db
+  nginx:
+    build: 
+      context: .
+      dockerfile: ./webserver/Dockerfile
+    restart: always
+    ports:
+      - "80:80"
+  db:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=$POSTGRES_DB
+      - POSTGRES_USER=$POSTGRES_USER
+      - POSTGRES_PASSWORD=$POSTGRES_PASSWORD
+
