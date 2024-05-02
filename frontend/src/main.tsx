@@ -4,8 +4,10 @@ import App from './App.tsx'
 import './index.css'
 import { ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
 
+const base_url = import.meta.env.VITE_BASE_URL
+// const base_url = 'http://localhost:4000/graphql'
 const client = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
+  uri: `${base_url}/api`,
   cache: new InMemoryCache()
 })
 

@@ -1,7 +1,7 @@
 version: "3"
 services:
   api:
-    build: ./backend
+    image: $DOCKERHUB_UNAME/pokemon-ts-graphql_api-prod:$NEW_VERSION 
     ports:
       - "4000:4000"
     environment:
@@ -11,9 +11,7 @@ services:
     depends_on:
       - db
   nginx:
-    build: 
-      context: .
-      dockerfile: ./webserver/Dockerfile
+    image: $DOCKERHUB_UNAME/pokemon-ts-graphql_api-prod:$NEW_VERSION
     restart: always
     ports:
       - "80:80"
@@ -24,6 +22,7 @@ services:
       - VITE_STORAGE_BUCKET=$VITE_STORAGE_BUCKET
       - VITE_MESSAGING_SENDER_ID=$VITE_MESSAGING_SENDER_ID
       - VITE_APP_ID=$VITE_APP_ID
+      - FIREBASE_AUTH_DOMAIN=$FIREBASE_AUTH_DOMAIN
     
   db:
     image: postgres:15
