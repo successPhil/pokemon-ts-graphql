@@ -5,9 +5,12 @@ import './index.css'
 import { ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client'
 
 
-const base_url = import.meta.env.VITE_BASE_URL + "/graphql"
+// const base_url = import.meta.env.VITE_BASE_URL + "/graphql"
 
-// const base_url = 'http://localhost:4000/graphql'
+const base_url = 'http://pokemonko.com:4000'
+console.log(base_url, 'checking for sanity in prod')
+
+// const base_url = 'http://localhost:4000'
 
 
 
