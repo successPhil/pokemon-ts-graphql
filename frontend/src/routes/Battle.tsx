@@ -41,7 +41,7 @@ const Battle = () => {
             <BattleLayout />
             <button onClick={handleClick}>Change Player Turn</button>
             {playerTurn && (
-                <MultiProjectile moveType={PokemonType.Grass} />
+                <MultiProjectile moveType={PokemonType.Electric} />
             )}
             <PlayerDisplay/>
             {/* <SingleProjectile moveType={PokemonType.Normal} /> */}
