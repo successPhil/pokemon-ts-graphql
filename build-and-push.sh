@@ -30,7 +30,7 @@ docker push $DOCKERHUB_UNAME/pokemon-ts-graphql_webserver-prod:$NEW_VERSION
 ############################################################
 ######################## Build API #########################
 
-docker buildx build --platform=linux/amd64 -t $DOCKERHUB_UNAME/pokemon-ts-graphql_api-prod:$NEW_VERSION -f backend/Dockerfile ./backend --no-cache
+docker buildx build --platform=linux/amd64 -t $DOCKERHUB_UNAME/pokemon-ts-graphql_api-prod:$NEW_VERSION -f apolloserver/Dockerfile ./apolloserver --no-cache
 
 docker push $DOCKERHUB_UNAME/pokemon-ts-graphql_api-prod:$NEW_VERSION
 

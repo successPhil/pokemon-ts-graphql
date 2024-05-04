@@ -1,6 +1,6 @@
 FROM node:20
 
-WORKDIR /backend
+WORKDIR /apolloserver
 
 COPY package*.json ./
 
