@@ -1,13 +1,8 @@
 version: "3"
 services:
-  api:
+  apollo-server:
     image: $DOCKERHUB_UNAME/pokemon-ts-graphql_api-prod:$NEW_VERSION
-    environment:
-      - DB_NAME=$POSTGRES_DB
-      - DB_USER=$POSTGRES_USER
-      - DB_PASS=$DB_PASS
-    depends_on:
-      - db
+   
   nginx:
     image: $DOCKERHUB_UNAME/pokemon-ts-graphql_webserver-prod:$NEW_VERSION
     restart: always

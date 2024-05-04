@@ -1,15 +1,8 @@
 version: "3"
 services:
-  api:
-    build: ./backend
-    ports:
-      - "4000:4000"
-    environment:
-      - DB_NAME=$POSTGRES_DB
-      - DB_USER=$POSTGRES_USER
-      - DB_PASS=$POSTGRES_PASSWORD
-    depends_on:
-      - db
+  apollo-server:
+    build: ./apolloserver
+ 
   nginx:
     build: 
       context: .
